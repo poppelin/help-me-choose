@@ -7,13 +7,40 @@
   </head>
   <body>
     <h1>Help me choose between...</h1>
-    <img src="http://poppelin.se/blogg/wp-content/uploads/2019/06/31318385_10155797012180432_3213331679272025810_n.jpg">
+    <img src="http://poppelin.se/blogg/wp-content/uploads/2016/10/profilbildliten-1.png">
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Something"></input>
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button>Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(add_option)
+      })
+    </script>
+
+    <script>
+      $(function() {
+
+        var backgrund_change = function() {
+          $('body').addClass('newBackground')
+        }
+        
+        $('h1').click(backgrund_change)
+      })
+    </script>
+
   </body>
 </html>

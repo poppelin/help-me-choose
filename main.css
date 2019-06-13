@@ -4,7 +4,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
-  background-image: linear-gradient(#ff006c, yellow, #ff006c);
+  background-image: linear-gradient(#ff99cc, yellow, #ff99cc);
+  font-family:  'Futura', 'Helvetica';
 }
 
 h1 {
@@ -47,6 +48,10 @@ input {
   }
 
 img {
-  margin-top: 10px;
-  border-radius: 50%;
+  margin-top: 30px;
+  border-radius: 20%;
+}
+
+.newBackground {
+  background-image: linear-gradient(yellow, #ff99cc, yellow);
 }
